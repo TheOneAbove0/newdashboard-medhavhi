@@ -29,6 +29,19 @@ const IMAGES = {
   Ellipse6: require("./Ellipse 6.png"),
   Wallpaper: require("./Wallpaper.png"),
   Comment: require("./comment.png"),
+  Chart: require("./Chart.png"),
+  ChartB: require("./ChartB.png"),
+  Smile: require("./Smile.png"),
+  Flower: require("./Flower.png"),
+  Bhawani: require("./Bhawani.png"),
+  Wright: require("./wright.png"),
+  RedTwo: require("./redtwo.png"),
+  P1: require("./p1.png"),
+  P2: require("./p2.png"),
+  P3: require("./p3.png"),
+  Add: require("./Add.png"),
+
+
 
 };
 
