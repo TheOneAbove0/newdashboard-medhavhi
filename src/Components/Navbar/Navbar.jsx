@@ -1,5 +1,7 @@
 import React from "react";
-import IMAGES from "../assets/index";
+import {Notification,AddCirCle } from "../assets/Svg/index";
+import {SearchNormal } from "../assets/Image/index";
+
 
 export default function Navbar() {
   return (
@@ -14,20 +16,20 @@ export default function Navbar() {
       
       <div className=" flex gap-6 items-center ">
         <div className=" pl-4 w-[325px]  gap-2 border rounded-full flex items-center  ">
-          <img className=" object-cover w-[20px] h-[20px] " src={IMAGES.SearchNormal} alt="Search" />
+          <img className=" object-cover w-[20px] h-[20px] " src={SearchNormal} alt="Search" />
           <input className=" py-3 focus:outline-none " type="text" placeholder="Search" />
         </div>
 
         <div>
           <button className=" bg-primaryColor cursor-pointer w-36 h-[52px]  px-6 ml-auto py-4 text-white rounded-lg flex items-center gap-2 ">
-            <img src={IMAGES.AddCirCle} alt="Dashboard" />
+            <img src={AddCirCle} alt="Dashboard" />
 
             <span>Create</span>
           </button>
         </div>
 
         <div>
-          <img src={IMAGES.Notification} alt="Notification" />
+          <img src={Notification} alt="Notification" />
         </div>
         <div className="w-10 h-10 cursor-pointer  rounded-full overflow-hidden border  ">
           <img

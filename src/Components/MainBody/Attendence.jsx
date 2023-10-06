@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from "react";
-import IMAGES from "../assets";
+import React, { useState } from "react";
+import {Calendartwo,DownL, Chart, ChartB, Wright } from "../assets/Image/index";
 import {
   AnnouncementData,
   ColorItems,
@@ -18,7 +18,7 @@ export default function Attendence() {
     SetActiveItem(label);
   };
 
-  const MemorizeActiveItems = useMemo(() => activeItems, [activeItems]);
+ 
 
   return (
     <div className=" h-[952px] flex-grow min-w-0 w-3/4 rounded-[16px] bg-DavyGray bg-opacity-[1%] ">
@@ -33,7 +33,7 @@ export default function Attendence() {
                     clickHandler(item);
                   }}
                   className={`px-4 py-[14px] cursor-pointer ${
-                    MemorizeActiveItems === item ? "buttonColor" : ""
+                    activeItems === item ? "buttonColor" : ""
                   }`}
                 >
                   {item}
@@ -44,7 +44,7 @@ export default function Attendence() {
               <span className=" text-xs font-medium text-DavyGray ">
                 22-12-2023
               </span>
-              <img src={IMAGES.Calendartwo} alt="Calendartwo" />
+              <img src={Calendartwo} alt="Calendartwo" />
             </div>
           </div>
 
@@ -57,14 +57,14 @@ export default function Attendence() {
                   </span>
                   <div className=" flex items-center gap-2 py-[9px] bg-opacity-20 bg-Disable  px-4  ">
                     <span className=" font-medium text-xs  ">All class</span>
-                    <img src={IMAGES.DownL} alt="DownL" />
+                    <img src={DownL} alt="DownL" />
                   </div>
                 </div>
 
                 <div className=" flex flex-col items-center ">
                   <img
                     className=" mt-3 w-[150px] h-[150px] "
-                    src={IMAGES.Chart}
+                    src={Chart}
                     alt="Chart"
                   />
                   <div className=" flex  pb-[28px] gap-4 mt-3 ">
@@ -118,11 +118,11 @@ export default function Attendence() {
                 <span className=" font-semibold text-sm  ">Users</span>
                 <div className=" flex items-center gap-2 py-[9px] bg-opacity-20 bg-Disable  px-4  ">
                   <span className=" text-xs font-medium   ">By Device</span>
-                  <img src={IMAGES.DownL} alt="DownL" />
+                  <img src={DownL} alt="DownL" />
                 </div>
               </div>
               <div className=" flex items-center gap-[135px] mt-[21px] pl-[40px] pr-[56px] pb-[35px]   ">
-                <img className=" w-40 h-40 " src={IMAGES.ChartB} alt="ChartB" />
+                <img className=" w-40 h-40 " src={ChartB} alt="ChartB" />
 
                 <div className=" flex flex-col  gap-2  ">
                   {ColorItems.map((item, index) => (
@@ -186,7 +186,7 @@ export default function Attendence() {
                     </div>
                   </div>
                   <div className="flex items-end flex-col gap-1">
-                    <img src={IMAGES.Wright} alt="RedTwo" />
+                    <img src={Wright} alt="RedTwo" />
                     <div className="font-medium text-[13px] text-Disable">
                       {item.time}
                     </div>
@@ -206,7 +206,7 @@ export default function Attendence() {
                   <span className=" font-medium text-xs leading-[14.4px] ">
                     All class
                   </span>
-                  <img src={IMAGES.DownL} alt="DownL" />
+                  <img src={DownL} alt="DownL" />
                 </div>
               </div>
 

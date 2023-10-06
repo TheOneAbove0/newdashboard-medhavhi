@@ -1,4 +1,4 @@
-import IMAGES from "../assets";
+import { Smile, P1,P2,P3, Flower,Bhawani  } from "../assets/Image/index";
 
 export const Items = ["Attendance", "Assignments", "Test scores", "Grades"];
 
@@ -41,17 +41,17 @@ export const Data = [
 
   export const CommunitiesData = [
     {
-      logo: IMAGES.Smile,
+      logo: Smile,
       companyName: "Acme Corporation",
       time: "4:30 PM",
     },
     {
-      logo: IMAGES.Flower,
+      logo: Flower,
       companyName: "Bluth Company",
       time: "4:30 PM",
     },
     {
-      logo: IMAGES.Bhawani,
+      logo: Bhawani,
       companyName: "Medhavhi",
       time: "4:30 PM",
     },
@@ -66,9 +66,9 @@ export const Data = [
   ];
 
   export const FeesData2 = [
-    { image: IMAGES.P1, name: 'Sharad Shakya', amount: 'Rs. 200232' },
-    { image: IMAGES.P2, name: 'Prabin Thapa', amount: 'Rs. 200232' },
-    { image: IMAGES.P3, name: 'Sujab Shrestha', amount: 'Rs. 200232' },
-    { image: IMAGES.P3, name: 'Sharad Shakya', amount: 'Rs. 200232' },
+    { image: P1, name: 'Sharad Shakya', amount: 'Rs. 200232' },
+    { image: P2, name: 'Prabin Thapa', amount: 'Rs. 200232' },
+    { image: P3, name: 'Sujab Shrestha', amount: 'Rs. 200232' },
+    { image: P3, name: 'Sharad Shakya', amount: 'Rs. 200232' },
    
   ];

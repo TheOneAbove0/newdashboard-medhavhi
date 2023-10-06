@@ -1,5 +1,5 @@
 import React from "react";
-import IMAGES from "../assets";
+import {Add} from "../assets/Image/index";
 import { TaskData } from "./TaskData";
 
 export default function Task() {
@@ -8,7 +8,7 @@ export default function Task() {
       <div className=" flex  flex-col">
         <div className=" flex border-b py-[14px]  px-[16px] items-center justify-between  ">
           <span>Task & Reminders</span>
-          <img src={IMAGES.Add} alt="Add" />
+          <img src={Add} alt="Add" />
         </div>
 
         <div className="flex flex-col  ">

@@ -1,38 +1,38 @@
-import IMAGES from '../assets/index';
+import {Assignment} from '../assets/Svg/index';
 
 const ListData =[
     {
         label:'Assignment',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Resources',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Results',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Attendance',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Online class',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Events',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
     {
         label:'Communities',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
 
     {
         label:'Lesson plans',
-        Photo:IMAGES.Assignment
+        Photo:Assignment
     },
 ]
 export default ListData;

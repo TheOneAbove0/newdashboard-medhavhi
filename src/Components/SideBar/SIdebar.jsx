@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from "react";
 import menuItems from "./sidebarData";
-import IMAGES from "../assets/index";
+import {Setting, Logout  } from "../../Components/assets/Svg/index";
+
 
 export default function Sidebar() {
   const [activeItem, setActiveItem] = useState("Dashboard");
@@ -50,11 +51,11 @@ export default function Sidebar() {
 
       <div>
         <div className="flex items-center mt-24 gap-2 cursor-pointer  mx-auto py-3 rounded-lg px-5">
-          <img src={IMAGES.Setting} alt="Settings" />
+          <img src={Setting} alt="Settings" />
           <span>Settings</span>
         </div>
         <div className="flex items-center gap-2 cursor-pointer  px-5 mx-auto py-3 rounded-lg">
-          <img src={IMAGES.Logout} alt="Logout" />
+          <img src={Logout} alt="Logout" />
           <span>Logout</span>
         </div>
       </div>
