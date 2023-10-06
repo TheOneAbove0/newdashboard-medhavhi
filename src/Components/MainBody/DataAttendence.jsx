@@ -3,9 +3,9 @@ import { Smile, P1,P2,P3, Flower,Bhawani  } from "../assets/Image/index";
 export const Items = ["Attendance", "Assignments", "Test scores", "Grades"];
 
 export const Statuses = [
-  { color: "BGreen", text: "Present" },
-  { color: "RedPantone", text: "Absent" },
-  { color: "MaizeCrayola", text: "On leave" },
+  { color: "bg-BGreen", text: "Present" },
+  { color: 'bg-RedPantone', text: "Absent" },
+  { color: "bg-MaizeCrayola", text: "On leave" },
 ];
 
 export const Data = [
@@ -18,9 +18,9 @@ export const Data = [
   ];
 
   export const ColorItems = [
-    { color: 'BGreen', text: 'Android' },
-    { color: 'primaryColor', text: 'Web' },
-    { color: 'MaizeCrayola', text: 'iOS' },
+    { color: 'bg-BGreen', text: 'Android' },
+    { color: 'bg-primaryColor', text: 'Web' },
+    { color: 'bg-MaizeCrayola', text: 'iOS' },
   ];
 
   export const AnnouncementData = [

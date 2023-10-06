@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import {Calendartwo,DownL, Chart, ChartB, Wright } from "../assets/Image/index";
+import {
+  Calendartwo,
+  DownL,
+  Chart,
+  ChartB,
+  Wright,
+} from "../assets/Image/index";
 import {
   AnnouncementData,
   ColorItems,
@@ -17,8 +23,6 @@ export default function Attendence() {
   const clickHandler = (label) => {
     SetActiveItem(label);
   };
-
- 
 
   return (
     <div className=" h-[952px] flex-grow min-w-0 w-3/4 rounded-[16px] bg-DavyGray bg-opacity-[1%] ">
@@ -41,22 +45,22 @@ export default function Attendence() {
               ))}
             </ul>
             <div className="mx-4 my-2 py-2 px-4 bg-Disable bg-opacity-20 flex items-center gap-2 ">
-              <span className=" text-xs font-medium text-DavyGray ">
+              <span className=" text-xs leading-[14.4px] font-medium text-DavyGray ">
                 22-12-2023
               </span>
               <img src={Calendartwo} alt="Calendartwo" />
             </div>
           </div>
 
-          <div className=" flex px-4 gap-4 ">
+          <div className=" flex px-4 gap-4 pb-2 ">
             <div className="w-full h-[280px] border rounded-[16px]  shadow-sm bg-white  ">
               <div className=" flex flex-col  ">
                 <div className=" flex border-b py-[14px]  px-[16px] items-center justify-between  ">
-                  <span className="  font-semibold text-[14px] leading-[19.6px">
+                  <span className="  font-semibold text-[14px] leading-[19.6px]">
                     Attendance Summary
                   </span>
                   <div className=" flex items-center gap-2 py-[9px] bg-opacity-20 bg-Disable  px-4  ">
-                    <span className=" font-medium text-xs  ">All class</span>
+                    <span className=" font-medium text-xs leading-[14.4px] ">All class</span>
                     <img src={DownL} alt="DownL" />
                   </div>
                 </div>
@@ -71,9 +75,9 @@ export default function Attendence() {
                     {Statuses.map((status, index) => (
                       <div key={index} className="flex items-center gap-2">
                         <div
-                          className={`w-3 h-3 rounded-full bg-${status.color}`}
+                          className={`w-3 h-3 rounded-full ${status.color}`}
                         ></div>
-                        <span className="text-sm">{status.text}</span>
+                        <span className="text-sm leading-[19.6px]">{status.text}</span>
                       </div>
                     ))}
                   </div>
@@ -81,9 +85,9 @@ export default function Attendence() {
               </div>
             </div>
 
-            <div className="w-full h-[280px] overflow-hidden border rounded-[16px] shadow-sm bg-white  ">
+            <div className="w-full h-[280px] overflow-y-scroll scrollbar-hidden border rounded-[16px] shadow-sm bg-white  ">
               <div className=" flex flex-col ">
-                <span className=" py-[14px] font-semibold text-sm border-b pl-[16px] ">
+                <span className=" py-[14px] font-semibold leading-[19.6px] text-sm border-b pl-[16px] tracking-[2%] ">
                   Attendance
                 </span>
 
@@ -93,14 +97,14 @@ export default function Attendence() {
                     className="flex items-center justify-between border-b"
                   >
                     <div className="flex flex-col gap-1 py-2 pl-4">
-                      <div className="font-semibold text-base leading-[20px]">
+                      <div className="font-semibold text-base leading-[20px] tracking-[2%] ">
                         {item.className}
                       </div>
-                      <div className="text-sm text-BGreen">
+                      <div className="text-sm leading-[19.6px] text-BGreen">
                         {item.percentage}
                       </div>
                     </div>
-                    <div className="flex flex-col text-sm gap-1 py-2 pr-4">
+                    <div className="flex flex-col text-sm leading-[19.6px] gap-1 py-[10px] pr-4">
                       <div className="text-BGreen">{item.present}</div>
                       <div className="text-Disable">{item.absent}</div>
                     </div>
@@ -115,9 +119,9 @@ export default function Attendence() {
           <div className="  h-[280px] border rounded-[16px] w-full">
             <div className=" flex flex-col bg-white rounded-[16px] ">
               <div className=" flex border-b py-[14px]  px-[16px] items-center justify-between  ">
-                <span className=" font-semibold text-sm  ">Users</span>
+                <span className=" font-semibold text-sm leading-[19.6px]  ">Users</span>
                 <div className=" flex items-center gap-2 py-[9px] bg-opacity-20 bg-Disable  px-4  ">
-                  <span className=" text-xs font-medium   ">By Device</span>
+                  <span className=" text-xs font-medium leading-[14.4px]  ">By Device</span>
                   <img src={DownL} alt="DownL" />
                 </div>
               </div>
@@ -128,7 +132,7 @@ export default function Attendence() {
                   {ColorItems.map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <div
-                        className={`w-4 h-4 rounded-full bg-${item.color}`}
+                        className={`w-4 h-4 rounded-full ${item.color}`}
                       ></div>
                       <span className="text-base leading-[20px] font-semibold">
                         {item.text}
@@ -143,10 +147,10 @@ export default function Attendence() {
           <div className="  h-[280px] bg-white rounded-[16px] border w-full ">
             <div className=" flex flex-col gap-2 ">
               <div className=" flex border-b py-[14px]  px-[16px] items-center justify-between  ">
-                <span className=" text-md font-semibold  ">
+                <span className=" text-sm font-semibold leading-[19.6px]  ">
                   Announcements & Notifications
                 </span>
-                <button className=" font-medium text-xs px-4 text-white py-2 bg-primaryColor rounded-[8px] ">
+                <button className=" font-medium text-xs leading-[14.4px] px-4 text-white py-2 bg-primaryColor rounded-[8px] ">
                   Add new
                 </button>
               </div>
@@ -159,7 +163,7 @@ export default function Attendence() {
                     <span className="font-semibold text-base leading-[20px]">
                       {item.title}
                     </span>
-                    <div className="text-[12px]">{item.date}</div>
+                    <div className="text-sm leading-[19.6px] text-SpanishGrey ">{item.date}</div>
                   </div>
                 ))}
               </div>
@@ -170,7 +174,7 @@ export default function Attendence() {
         <div className=" flex  gap-4 ">
           <div className="  h-[280px] bg-white rounded-[16px] border w-full ">
             <div className=" flex flex-col gap-2 ">
-              <span className=" font-semibold text-sm  py-[14px] border-b pl-[16px] ">
+              <span className=" font-semibold text-sm leading-[19.6px]  py-[14px] border-b pl-[16px] ">
                 Communities
               </span>
 
@@ -181,13 +185,13 @@ export default function Attendence() {
                 >
                   <div className="flex items-center gap-4">
                     <img src={item.logo} alt={item.companyName} />
-                    <div className="font-medium text-xs">
+                    <div className="font-medium leading-[16.8px] text-xs">
                       {item.companyName}
                     </div>
                   </div>
                   <div className="flex items-end flex-col gap-1">
                     <img src={Wright} alt="RedTwo" />
-                    <div className="font-medium text-[13px] text-Disable">
+                    <div className="font-medium text-[13px] leading-[15.6px] text-Disable">
                       {item.time}
                     </div>
                   </div>
@@ -196,7 +200,7 @@ export default function Attendence() {
             </div>
           </div>
 
-          <div className="  h-[280px] bg-white overflow-hidden rounded-[16px] border w-full ">
+          <div className="  h-[280px] bg-white overflow-y-scroll scrollbar-hidden rounded-[16px] border w-full ">
             <div className=" flex  flex-col">
               <div className=" flex border-b  items-center justify-between  ">
                 <span className=" font-semibold py-[14px] pl-4 text-sm leading-[19.6px] ">
@@ -232,13 +236,13 @@ export default function Attendence() {
                 {FeesData2.map((item, index) => (
                   <div
                     key={index}
-                    className="flex text-sm leading-[19.6px] border-b items-center px-6 justify-between py-2"
+                    className="flex text-sm leading-[19.6px] border-b items-center px-6 justify-between py-[7px]"
                   >
                     <div className="flex item-center gap-3">
-                      <img src={item.image} alt={item.name} />
-                      <span>{item.name}</span>
+                      <img className=" w-8 h-8 " src={item.image} alt={item.name} />
+                      <div className=" text-sm leading-[19.6px] pt-[7px]">{item.name}</div>
                     </div>
-                    <div>{item.amount}</div>
+                    <div className="  text-sm leading-[19.6px] ">{item.amount}</div>
                   </div>
                 ))}
               </div>

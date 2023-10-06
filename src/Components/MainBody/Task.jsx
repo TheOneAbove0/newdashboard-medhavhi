@@ -1,5 +1,5 @@
 import React from "react";
-import {Add} from "../assets/Image/index";
+import { Add } from "../assets/Image/index";
 import { TaskData } from "./TaskData";
 
 export default function Task() {
@@ -15,7 +15,9 @@ export default function Task() {
           {TaskData.map((item, index) => (
             <div
               key={index}
-              className="flex font-semibold text-sm flex-col gap-2 py-2 pl-4 border-b"
+              className={`flex font-semibold text-sm flex-col gap-2 py-[9px] pl-4 ${
+                index === TaskData.length - 1 ? "" : "border-b"
+              }`}
             >
               <span>{item.text}</span>
               <p className="text-[12px] font-medium text-DavyGray">
