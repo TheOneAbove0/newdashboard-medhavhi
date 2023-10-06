@@ -40,6 +40,16 @@ const IMAGES = {
   P2: require("./p2.png"),
   P3: require("./p3.png"),
   Add: require("./Add.png"),
+  DownL: require("./DownL.png"),
+  People: require("./people.png"),
+  UserAdd: require("./UserAdd.png"),
+  PresentionChart: require("./PresentionChart.png"),
+  UserOctagon: require("./UserOctagon.png"),
+  Calendartwo: require("./Calendartwo.png"),
+  NotificationStatus: require("./NotificationStatus.png"),
+  DashWhite: require("./DashWhite.png"),
+  SearchNormal: require("./SearchNormal.png"),
+
 
 
 

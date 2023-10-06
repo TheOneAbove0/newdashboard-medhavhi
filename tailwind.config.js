@@ -15,7 +15,8 @@ module.exports = {
        BGreen:' #37B76C',
        LighRed:'#EA526F',
        NewGreen:'#22BF90',
-       Disable:'#9A9A9A'
+       Disable:'#9A9A9A',
+       MaizeCrayola:'#FFBA08',
        
 
       },
